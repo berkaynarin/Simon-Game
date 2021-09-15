@@ -30,7 +30,7 @@ function nextSequence() {
   var randomChosenColour = buttonColours[randomNumber];
   gamePattern.push(randomChosenColour); // adds new button colour to end of the array
 
-  $('#'+randomChosenColour).fadeOut(250).fadeIn(250); // creating a flash effect
+  $('#'+randomChosenColour).fadeOut(700).fadeIn(700); // creating a flash effect
 
   playSound(randomChosenColour);
 }
