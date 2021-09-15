@@ -30,7 +30,7 @@ function nextSequence() {
   var randomChosenColour = buttonColours[randomNumber];
   gamePattern.push(randomChosenColour); // adds new button colour to end of the array
 
-  $('#'+randomChosenColour).fadeOut(100).fadeIn(100); // creating a flash effect
+  $('#'+randomChosenColour).fadeOut(250).fadeIn(250); // creating a flash effect
 
   playSound(randomChosenColour);
 }
@@ -40,7 +40,7 @@ function checkAnswer(currentLevel){
       if(userClickedPattern.length === gamePattern.length){
         setTimeout(function() {
           nextSequence();
-        }, 2000);
+        }, 1500);
       }
   }
   else{ // if user is wrong
